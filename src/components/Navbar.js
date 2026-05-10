@@ -21,11 +21,11 @@ export default function Navbar() {
         
         <div className="space-x-6 flex items-center">
           <Link href="/" className="hover:text-blue-200 transition">Inicio</Link>
-          
+          <Link href="/vuelos" className="hover:text-blue-200 transition">Vuelos</Link>
           {/* Solo mostramos Gestión de Vuelos si es Admin (rol 1) */}
           {rol === 1 && (
-            <Link href="/vuelos" className="hover:text-blue-200 transition bg-blue-800 px-3 py-1 rounded">
-              Panel Admin
+            <Link href="/admin/vuelos" className="hover:text-blue-200 transition bg-blue-800 px-3 py-1 rounded">
+              Control Vuelos
             </Link>
           )}
 
